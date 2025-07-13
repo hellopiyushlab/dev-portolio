@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+:root {
+    --backgroundColor: white;
+    --panelColor: black;
+    --accentColor: black;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.panel-container{
+    height: 35px;
+    width: 100%;
+    background-color: var(--panelColor);
+    position: fixed;
+}
+.main-container{
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+}
+.main-window {
+    height: 60%;
+    width: 45%;
+    min-width: 700px;
+    border: var(--accentColor) 5px solid;
+    flex:  0 1 auto;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    flex-shrink: 1;
+    box-shadow: 5px solid black;
+}
+.window-panel-container{
+    height: 40px;
+    width: 100%;
+    background-color: var(--accentColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+}
+.main-content-container {
+    flex: 1 1 auto;
+    /* border: pink solid 2px; */
+    height: 100%;
+    width: 100%;
+    /* margin: 25px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.navigation {
+    display: flex;
+    height: 30%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px black solid; */
+    /* max-height: 50%; */
+    flex-shrink: 1;
+}
+
+/* experimenting with clickables */
+.clickable {
+    height: 80px;
+    width: 80px;
+    /* border: black solid 1px; */
+    margin: 25px;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 75px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.clickable:hover {
+    transform: scale(1.25);
+}
+
+.clickable-title {
+    font-size: 15px;
+    align-self: center;
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 10px;
+}
+
+
+
+h1 {
+    font-size: 75px;
+    font-family: "Pixelify Sans", sans-serif;
+    margin: 0;
+}
+span {
+    color: orange;
+}
+.titles, h3 {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+h3 {
+    align-self: flex-end;
+    margin: 3px;;
+}
+.close-buttons {
+    background-color: orange;
+    color: white;
+    width: 27px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 5px;
+    margin-bottom: 3px;
+    border-radius: 100%;
+    font-family: "Rajdhani", sans-serif;
+    /* font-size: large; */
+    cursor: pointer;
+}
+.titles {
+    color: white;
+    font-weight: 700;
+    font-size: large;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
