@@ -4,7 +4,7 @@
     --backgroundColor: white;
     --panelColor: black;
     --elementColor: black;
-    --accentColor: orange;
+    --accentColor: pink;
     --lightModeBaseTextColor: black;
     --lightModePanelTextColor: white;
 }
@@ -40,6 +40,11 @@ body {
     border-radius: 100%;
     cursor: pointer;
     margin-right: auto;
+    transition: width 0.3s ease, border-radius 0.3s ease;
+}
+.colors:hover {
+    width: 60px;
+    border-radius: 50px;
 }
 
 .main-panel-text {
@@ -93,6 +98,36 @@ body {
     border-top-right-radius: 15px;
     position: relative;
 }
+.titles {
+    color: var(--lightModePanelTextColor);
+    font-weight: 700;
+    font-size: 21px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.close-buttons {
+    background-color: var(--accentColor);
+    color: var(--lightModePanelTextColor);
+    width: 27px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 5px;
+    margin-bottom: 3px;
+    border-radius: 100%;
+    font-family: "Rajdhani", sans-serif;
+    cursor: pointer;
+    transition: width 0.3s ease, border-radius 0.3s ease;
+}
+.close-buttons:hover {
+    width: 60px;
+    border-radius: 50px;
+    background-color: red;
+}
+
 .main-content-container {
     flex: 1 1 auto;
     /* border: pink solid 2px; */
@@ -146,7 +181,7 @@ body {
     transform: scale(1.25);
 }
 
-.clickable-title {
+.clickable-text {
     font-size: 15px;
     align-self: center;
     font-family: "Courier Prime", monospace;
@@ -173,28 +208,4 @@ span {
 h3 {
     align-self: flex-end;
     margin: 3px;;
-}
-.close-buttons {
-    background-color: var(--accentColor);
-    color: var(--lightModePanelTextColor);
-    width: 27px;
-    height: 27px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: 5px;
-    margin-bottom: 3px;
-    border-radius: 100%;
-    font-family: "Rajdhani", sans-serif;
-    /* font-size: large; */
-    cursor: pointer;
-}
-.titles {
-    color: var(--lightModePanelTextColor);
-    font-weight: 700;
-    font-size: large;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
 }
