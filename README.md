@@ -1,7 +1,7 @@
 # dev-portolio
 Experimental Developer Portfolio
 
-- [ ] Add elements in Panel
+- [x] Add elements in Panel
 - [ ] Make pop out divs
     - [ ] "About Me"
     - [ ] "Links"

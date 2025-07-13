@@ -3,7 +3,10 @@
 :root {
     --backgroundColor: white;
     --panelColor: black;
-    --accentColor: black;
+    --elementColor: black;
+    --accentColor: orange;
+    --lightModeBaseTextColor: black;
+    --lightModePanelTextColor: white;
 }
 
 html, body {
@@ -23,7 +26,43 @@ body {
     width: 100%;
     background-color: var(--panelColor);
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.colors {
+    color: var(--lightModePanelTextColor);
+    background-color: var(--accentColor);
+    color: var(--lightModePanelTextColor);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.main-panel-text {
+    color: var(--lightModePanelTextColor);
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 300;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#local-time {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.toggle-mode-container {
+    color: var(--lightModePanelTextColor);
+    font-size: 24px;
+    margin-right: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
 .main-container{
     display: flex;
     flex: 1 1 auto;
@@ -34,7 +73,7 @@ body {
     height: 60%;
     width: 45%;
     min-width: 700px;
-    border: var(--accentColor) 5px solid;
+    border: var(--elementColor) 5px solid;
     flex:  0 1 auto;
     margin: 50px;
     display: flex;
@@ -42,12 +81,11 @@ body {
     align-items: center;
     border-radius: 20px;
     flex-shrink: 1;
-    box-shadow: 5px solid black;
 }
 .window-panel-container{
     height: 40px;
     width: 100%;
-    background-color: var(--accentColor);
+    background-color: var(--elementColor);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,7 +163,7 @@ h1 {
     margin: 0;
 }
 span {
-    color: orange;
+    color: var(--accentColor);
 }
 .titles, h3 {
     font-family: "Courier Prime", monospace;
@@ -137,8 +175,8 @@ h3 {
     margin: 3px;;
 }
 .close-buttons {
-    background-color: orange;
-    color: white;
+    background-color: var(--accentColor);
+    color: var(--lightModePanelTextColor);
     width: 27px;
     height: 27px;
     display: flex;
@@ -153,7 +191,7 @@ h3 {
     cursor: pointer;
 }
 .titles {
-    color: white;
+    color: var(--lightModePanelTextColor);
     font-weight: 700;
     font-size: large;
     position: absolute;
