@@ -61,6 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setupPopup("about-me-clickable", "about-me-popup", "about-me-popup-close", ".about-me-header");
     setupPopup("projects-clickable", "projects-popup", "projects-popup-close", ".projects-header");
     setupPopup("contact-clickable", "contact-popup", "contact-popup-close", ".contact-header");
+    setupPopup("experience-clickable", "experience-popup", "experience-popup-close", ".experience-header");
 });
 
 document.getElementById("githubIcon").addEventListener("click", function () {
