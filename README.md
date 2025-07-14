@@ -11,7 +11,7 @@ Experimental Developer Portfolio
 - [x] Add a dock for Links
 - [x] Make links responsive
 - [x] Accent color change button
-- [ ] Make the accent color change responsive
+- [x] Make the accent color change responsive
 - [ ] Adaptable Z Index for windows
 - [ ] Blog Site
 - [ ] Mobile Friendly
