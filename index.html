@@ -40,15 +40,15 @@
                     <h3>- Mechatronics</h3>
                 </div>
                 <div class="navigation">
-                    <div class="clickable">
+                    <div class="clickable" id="about-me-clickable">
                         <i class="fa-solid fa-user"></i>
                         <h3 class="clickable-text">About me</h3>
                     </div>
-                    <div class="clickable">
+                    <div class="clickable" id="projects-clickable">
                         <i class="fa-solid fa-file-code"></i>
                         <h3 class="clickable-text">Projects</h3>
                     </div>
-                    <div class="clickable">
+                    <div class="clickable" id="contact-clickable">
                         <i class="fa-solid fa-envelope"></i>
                         <h3 class="clickable-text">Contact</h3>
                     </div>
@@ -61,17 +61,38 @@
         </div>
 
         <!-- about me window -->
-        <div class="about-me">
-            <div class="window-panel-container">
+        <div class="about-me hidden" id="about-me-popup">
+            <div class="window-panel-container about-me-header">
                 <div class="titles">About Me</div>
-                <div class="close-buttons">✖</div>
+                <div class="close-buttons" id="about-me-popup-close">✖</div>
             </div>
             <div class="about-me-content">
                 <h1>placeholder</h1>
             </div>
         </div>
         
-        
+        <!-- projects window -->
+        <div class="projects hidden" id="projects-popup">
+            <div class="window-panel-container projects-header">
+                <div class="titles">Projects</div>
+                <div class="close-buttons" id="projects-popup-close">✖</div>
+            </div>
+            <div class="projects-content">
+                <h1>placeholder</h1>
+            </div>
+        </div>
+
+        <!-- contact window -->
+        <div class="contact hidden" id="contact-popup">
+            <div class="window-panel-container contact-header">
+                <div class="titles">Contact</div>
+                <div class="close-buttons" id="contact-popup-close">✖</div>
+            </div>
+            <div class="contact-content">
+                <h1>placeholder</h1>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>

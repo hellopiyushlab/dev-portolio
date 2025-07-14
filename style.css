@@ -106,6 +106,20 @@ body {
     border-top-right-radius: 15px;
     position: relative;
 }
+
+.window-panel-container {
+    cursor: move;
+    height: 40px;
+    width: 100%;
+    background-color: var(--elementColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+}
+
 .titles {
     color: var(--lightModePanelTextColor);
     font-weight: 700;
@@ -228,21 +242,56 @@ h3 {
     box-shadow: var(--globalShadow);
     z-index: var(--zIndexActivePopout);
 }
-
-.window-panel-container {
-    cursor: move;
-    height: 40px;
-    width: 100%;
-    background-color: var(--elementColor);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    position: relative;
+#about-me-popup.hidden {
+    display: none;
 }
+
 
 .about-me-content {
     background-color: var(--backgroundColor);
     border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+/* Projects Window */
+
+.projects {
+    border: var(--elementColor) 5px solid;
+    border-radius: 20px;
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    box-shadow: var(--globalShadow);
+    z-index: var(--zIndexActivePopout);
+}
+#projects-popup.hidden {
+    display: none;
+}
+.projects-content {
+    background-color: var(--backgroundColor);
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+/* Contact Window */
+
+.contact {
+    border: var(--elementColor) 5px solid;
+    border-radius: 20px;
+    position: absolute;
+    top: 300px;
+    left: 1000px;
+    box-shadow: var(--globalShadow);
+    z-index: var(--zIndexActivePopout);
+}
+#contact-popup.hidden {
+    display: none;
+}
+.contact-content {
+    background-color: var(--backgroundColor);
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
