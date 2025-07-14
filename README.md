@@ -9,6 +9,7 @@ Experimental Developer Portfolio
 - [x] Make the divs appear and disappear in absolute positions
 - [x] Make the divs draggable
 - [ ] Add a pattern on left and right
+- [ ] Add a dock for Links
 - [ ] Accent color change button
 - [ ] Blog Site
 - [ ] Mobile Friendly
