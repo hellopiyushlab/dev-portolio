@@ -9,6 +9,7 @@ updateTime();
 setInterval(updateTime, 1000);
 
 
+
 // making about me appear and disappear
 
 document.addEventListener("DOMContentLoaded", () => {

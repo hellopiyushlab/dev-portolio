@@ -204,7 +204,7 @@ i:hover {
 }
 
 .clickable-text {
-    font-size: 15px;
+    font-size: 12px;
     align-self: center;
     font-family: "Courier Prime", monospace;
     font-weight: 700;
@@ -252,6 +252,9 @@ h3 {
     border-radius: 20px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+    max-height: 500px;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 /* Projects Window */
@@ -273,6 +276,9 @@ h3 {
     border-radius: 20px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+    max-height: 500px;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 /* Contact Window */
@@ -294,4 +300,7 @@ h3 {
     border-radius: 20px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+    max-height: 500px;
+    overflow: hidden;
+    overflow-y: auto;
 }
