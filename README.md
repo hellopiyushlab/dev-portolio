@@ -8,9 +8,11 @@ Experimental Developer Portfolio
     - [ ] "Project"
 - [x] Make the divs appear and disappear in absolute positions
 - [x] Make the divs draggable
-- [ ] Add a pattern on left and right
 - [x] Add a dock for Links
+- [x] Make links responsive
 - [x] Accent color change button
+- [ ] Make the accent color change responsive
+- [ ] Adaptable Z Index for windows
 - [ ] Blog Site
 - [ ] Mobile Friendly
 - [ ] Make the entire thing from React
