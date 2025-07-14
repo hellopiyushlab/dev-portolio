@@ -3,10 +3,10 @@
 :root {
     --backgroundColor: white;
     --panelColor: black;
-    --elementColor: black;
+    --elementColor: #5F5F5F;
     --accentColor: rgb(248, 110, 110, 0.753);
     --backgroundAccent: rgba(248, 110, 110, 0.753);
-    --lightModeBaseTextColor: black;
+    --lightModeBaseTextColor:  #5F5F5F;
     --lightModePanelTextColor: white;
 
     --zIndexHome: 100;
@@ -134,8 +134,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     position: relative;
 }
 
@@ -147,8 +147,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     position: relative;
 }
 
@@ -199,26 +199,23 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* margin-bottom: 50px; */
-    /* border: 2px black solid; */
 }
 
 .navigation {
     display: flex;
-    height: 30%;
+    height: 50%;
     width: 90%;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-shrink: 1;
-    /* border: 2px black solid; */
     box-sizing: border-box;
 }
 
 .clickable {
-    height: 100%;
-    width: fit-content;
-    /* margin: 25px; */
+    height: 50%;
+    width: 33.33%;
+    color: var(--lightModeBaseTextColor);
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -246,7 +243,7 @@ i {
 }
 
 .clickable-text {
-    font-size: 12px;
+    font-size: 15px;
     align-self: center;
     font-family: "Courier Prime", monospace;
     font-weight: 700;
@@ -258,6 +255,7 @@ h1 {
     font-size: 60px;
     font-family: "Pixelify Sans", sans-serif;
     margin: 0;
+    color: var(--lightModeBaseTextColor);
     text-shadow: var(--globalShadow);
 }
 .headingSpan {
@@ -276,14 +274,10 @@ h3 {
 .domain {
     align-self: flex-start;
     margin: 3px;
-    font-size: 15px;
-    background-color: var(--accentColor);
-    padding: 5px;
+    font-size: 17px;
     text-align: center;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10px;
+    color: var(--accentColor);
+    font-weight: 800;
 }
 
 

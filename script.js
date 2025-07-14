@@ -1,5 +1,5 @@
 const root = document.documentElement;
-const colors = ["#EF767A","#49BEAA", "#8B8BAE", "#88D9E6", "#526760" ,"#EF6461", "#06AED5", "#388659", "#E9D758", "#A491D3"];
+const colors = ["#EF767A","#49BEAA", "#8B8BAE", "#88D9E6", "#526760" ,"#EF6461", "#388659", "#E9D758", "#A491D3"];
 let index = 0;
 document.getElementById("colors").addEventListener("click", () => {
     index = (index + 1) % colors.length;
