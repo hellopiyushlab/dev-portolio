@@ -4,7 +4,7 @@
     --backgroundColor: white;
     --panelColor: black;
     --elementColor: black;
-    --accentColor: pink;
+    --accentColor: rgb(86, 209, 115);
     --lightModeBaseTextColor: black;
     --lightModePanelTextColor: white;
 
@@ -196,6 +196,10 @@ body {
     font-weight: 800;
 }
 
+i {
+    text-shadow: var(--globalShadow);
+}
+
 i:hover {
     color: var(--accentColor);
 }
@@ -216,6 +220,7 @@ h1 {
     font-size: 75px;
     font-family: "Pixelify Sans", sans-serif;
     margin: 0;
+    text-shadow: var(--globalShadow);
 }
 span {
     color: var(--accentColor);
