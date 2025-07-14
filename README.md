@@ -6,8 +6,8 @@ Experimental Developer Portfolio
     - [ ] "About Me"
     - [ ] "Links"
     - [ ] "Project"
-- [ ] Make the divs appear and disappear in absolute positions
-- [ ] Make the divs draggable
+- [x] Make the divs appear and disappear in absolute positions
+- [x] Make the divs draggable
 - [ ] Add a pattern on left and right
 - [ ] Accent color change button
 - [ ] Blog Site
