@@ -9,8 +9,8 @@ Experimental Developer Portfolio
 - [x] Make the divs appear and disappear in absolute positions
 - [x] Make the divs draggable
 - [ ] Add a pattern on left and right
-- [ ] Add a dock for Links
-- [ ] Accent color change button
+- [x] Add a dock for Links
+- [x] Accent color change button
 - [ ] Blog Site
 - [ ] Mobile Friendly
 - [ ] Make the entire thing from React
