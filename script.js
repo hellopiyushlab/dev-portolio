@@ -53,3 +53,23 @@ document.addEventListener("DOMContentLoaded", () => {
     setupPopup("projects-clickable", "projects-popup", "projects-popup-close", ".projects-header");
     setupPopup("contact-clickable", "contact-popup", "contact-popup-close", ".contact-header");
 });
+
+document.getElementById("githubIcon").addEventListener("click", function () {
+    window.open("https://github.com/hellopiyushlab", "_blank");
+});
+
+document.getElementById("twitterIcon").addEventListener("click", function () {
+    window.open("https://bsky.app/profile/piyushgautam.bsky.social", "_blank");
+});
+
+document.getElementById("blueskyIcon").addEventListener("click", function () {
+    window.open("https://bsky.app/profile/piyushgautam.bsky.social", "_blank");
+});
+
+document.getElementById("instagramIcon").addEventListener("click", function () {
+    window.open("https://www.instagram.com/piyush.loop/", "_blank");
+});
+
+document.getElementById("linkedinIcon").addEventListener("click", function () {
+    window.open("https://www.linkedin.com/in/piyush-gautam-9a60b9262/", "_blank");
+});
