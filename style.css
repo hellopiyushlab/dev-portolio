@@ -7,6 +7,12 @@
     --accentColor: pink;
     --lightModeBaseTextColor: black;
     --lightModePanelTextColor: white;
+
+    --zIndexHome: 100;
+    --zIndexPopout: 200;
+    --zIndexActivePopout: 300;
+
+    --globalShadow: 2px 2px 10px rgba(0,0,0,0.2);
 }
 
 html, body {
@@ -86,8 +92,10 @@ body {
     align-items: center;
     border-radius: 20px;
     flex-shrink: 1;
+    box-shadow: var(--globalShadow);
+    z-index: var(--zIndexHome);
 }
-.window-panel-container{
+.home-panel-container{
     height: 40px;
     width: 100%;
     background-color: var(--elementColor);
@@ -120,7 +128,7 @@ body {
     border-radius: 100%;
     font-family: "Rajdhani", sans-serif;
     cursor: pointer;
-    transition: width 0.3s ease, border-radius 0.3s ease;
+    transition: width 0.3s ease, border-radius 0.3s ease, background-color 1s ease;
 }
 .close-buttons:hover {
     width: 60px;
@@ -130,10 +138,8 @@ body {
 
 .main-content-container {
     flex: 1 1 auto;
-    /* border: pink solid 2px; */
     height: 100%;
     width: 100%;
-    /* margin: 25px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,42 +161,42 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    /* border: 1px black solid; */
-    /* max-height: 50%; */
     flex-shrink: 1;
 }
 
-/* experimenting with clickables */
 .clickable {
     height: 80px;
     width: 80px;
-    /* border: black solid 1px; */
     margin: 25px;
     cursor: pointer;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     font-size: 75px;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .clickable:hover {
     transform: scale(1.25);
+    font-weight: 800;
+}
+
+i:hover {
+    color: var(--accentColor);
+}
+.clickable-text:hover {
+    font-weight: 800;
 }
 
 .clickable-text {
     font-size: 15px;
     align-self: center;
     font-family: "Courier Prime", monospace;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
     margin-top: 10px;
 }
-
-
 
 h1 {
     font-size: 75px;
@@ -208,4 +214,35 @@ span {
 h3 {
     align-self: flex-end;
     margin: 3px;;
+}
+
+
+/* About Me Window */
+
+.about-me {
+    border: var(--elementColor) 5px solid;
+    border-radius: 20px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    box-shadow: var(--globalShadow);
+    z-index: var(--zIndexActivePopout);
+}
+
+.window-panel-container {
+    cursor: move;
+    height: 40px;
+    width: 100%;
+    background-color: var(--elementColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+}
+
+.about-me-content {
+    background-color: var(--backgroundColor);
+    border-radius: 20px;
 }
