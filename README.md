@@ -1,4 +1,7 @@
 # dev-portolio
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-black?style=for-the-badge&logo=github)](https://hellopiyushlab.github.io/dev-portolio/)
+
 Experimental Developer Portfolio
 
 - [x] Add elements in Panel
