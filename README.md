@@ -2,7 +2,7 @@
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-black?style=for-the-badge&logo=github)](https://hellopiyushlab.github.io/dev-portolio/)
 
-Experimental Developer Portfolio
+Experimental Developer Portfolio (under development!)
 
 - [x] Add elements in Panel
 - [ ] Make pop out divs
